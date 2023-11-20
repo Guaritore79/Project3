@@ -1,0 +1,297 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+body{
+    font : 12px/28px arial, sans-serif;
+    border-radius: 50% ;
+    background-color: #E1EEDD;
+}
+
+@font-face {
+    font-family: 'tilt';
+    src: url(TiltPrism-Regular-VariableFont_XROT\,YROT.ttf);
+}
+
+@font-face {
+    font-family: 'yatra';
+    src: url(YatraOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: pressstar;
+    src: url(PressStart2P-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'shantel';
+    src: url('ShantellSans-Italic-VariableFont_BNCE\,INFM\,SPAC\,wght.ttf');
+}
+
+.kontener{
+    width: 800px;
+    color:  black;
+    margin: auto;
+    background-color: #FEFBE9;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+.iklan1{
+    position: fixed;
+    top: 20%;
+    left: 2.5%;
+    animation: animasi1 2s infinite linear;
+}
+
+@keyframes animasi1{
+    0%{
+        
+    }
+    10%{
+        transform: rotate(1deg)
+    }
+    20%{
+        transform: rotate(2deg)
+    }
+    30%{
+        transform: rotate(3deg)
+    }
+    40%{
+        transform: rotate(3deg)
+    }
+    50%{
+        transform: rotate(1deg)
+    }
+    60%{
+        transform: rotate(-1deg)
+    }
+    70%{
+         transform: rotate(-2deg)
+    }
+    70%{
+         transform: rotate(-3deg)
+    }
+    80%{
+         transform: rotate(-2deg)
+    }
+    90%{
+         transform: rotate(-1deg)
+    }
+    100%{
+
+    }
+}
+
+.iklan2{
+    position: fixed;
+    top: 20%;
+    right: 2.5%;
+    animation: animasi2 3s infinite linear;
+}
+
+@keyframes animasi2{
+    0%{
+        
+    }
+    10%{
+        transform: rotate(1deg)
+    }
+    20%{
+        transform: rotate(2deg)
+    }
+    30%{
+        transform: rotate(3deg)
+    }
+    40%{
+        transform: rotate(3deg)
+    }
+    50%{
+        transform: rotate(1deg)
+    }
+    60%{
+        transform: rotate(-1deg)
+    }
+    70%{
+         transform: rotate(-2deg)
+    }
+    70%{
+         transform: rotate(-3deg)
+    }
+    80%{
+         transform: rotate(-2deg)
+    }
+    90%{
+         transform: rotate(-1deg)
+    }
+    100%{
+
+    }
+}
+
+.fix{
+    position: fixed;
+    background-color: #FEFBE9;
+    width: 800px;
+    margin: auto;
+    z-index: 1;
+}
+
+.header{
+    font-size: 50px;
+    padding: 15px;
+    font-family:'tilt';
+    color: #F0A04B;
+}
+
+.navbar a{
+    text-decoration: none;
+    color:rgb(182, 142, 103);
+    display: inline-block;
+    font-size: 15px;
+    margin: 5px;
+    border-radius: 10px;
+    /* background-color: #183A1D; */
+    padding: 0 15px;
+    margin-left: 15px ;
+    transition-duration: 500ms;
+    font-family: 'yatra';
+}
+
+.navbar a:hover{
+    background-color: #183A1D;
+    border-radius: 10px;
+    color: #FEFBE9;
+    border-bottom: 1px solid black;
+}
+
+.foto{
+    width: 800px;
+    margin-top: 96px;
+    opacity: 80%;
+}
+
+.foto:hover{
+    opacity: 100%;
+}
+
+.judul{
+    font-size: 30px;
+    font-family: 'pressstar';
+    color: rgb(190, 138, 86);
+    margin: 10px;
+}
+
+.judul:hover{
+    color: rgb(194, 174, 137);
+}
+
+.profil {
+    width: 200px;
+    float: right;
+    border-radius: 10%;
+    color: #E1EEDD;
+    background: #183A1D;
+    margin-left: 5px; 
+    margin-right: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.profil p{
+    padding-left: 10px;
+}
+
+.konten p{
+    width: 550px;
+    box-sizing: border-box;
+    margin-top: 20px ;
+    margin-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    float: left;
+    text-align: justify;
+}
+
+.kontener2{
+    margin: auto;
+    width: 800px;
+    height: 47px;
+    background: #183A1D;
+    color: rgb(193, 165, 113);
+    text-align: center;
+    padding-top: 15px;
+    font-family: 'shantel';
+    font-size: 20px;
+}
+
+.kontener2 span{
+    font-size: 30px;
+    font-family: 'tilt';
+    color: rgb(241, 228, 208);
+    transition-duration: 0.5s;
+    
+}
+
+.kontener2 span:hover{
+    color: rgb(227, 194, 143);
+}
